@@ -1,11 +1,13 @@
 import { Link, Route, Routes, useLocation } from 'react-router-dom'
 import PlanDashboardPage from './pages/PlanDashboard'
+import Week1Page from './pages/Week1'
 import MotionPlaygroundPage from './pages/MotionPlayground'
 import { useI18n } from './i18n/I18nContext'
 
 const navItems = [
   { to: '/', labelKey: 'app.nav.dashboard' },
   { to: '/playground', labelKey: 'app.nav.playground' },
+  { to: '/week1', labelKey: 'app.nav.week1' },
 ]
 
 const Navigation = () => {
@@ -71,6 +73,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<PlanDashboardPage />} />
           <Route path="/playground" element={<MotionPlaygroundPage />} />
+          <Route path="/week1" element={<Week1Page />} />
         </Routes>
       </main>
     </div>

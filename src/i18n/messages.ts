@@ -10,6 +10,7 @@ export const messages = {
       nav: {
         dashboard: '계획 대시보드',
         playground: '모션 플레이그라운드',
+        week1: '1주차 실습',
       },
       language: '언어',
     },
@@ -62,6 +63,37 @@ export const messages = {
         },
       },
     },
+    week1: {
+      badge: 'Week 1 Lab',
+      title: '기초 애니메이션 + AnimatePresence 실습',
+      description: 'initial/animate/transition, variants, exit 전환을 한 페이지에서 비교합니다.',
+      basic: {
+        title: 'Basic Transition',
+        description: '한 카드에서 spring/tween 전환 특성을 확인합니다.',
+        toggle: '카드 토글',
+        caption: 'initial/animate/transition 샘플',
+        body: '하나의 인터랙션으로 spring 과 tween 전환 차이를 확인합니다.',
+      },
+      variants: {
+        title: 'Variants Orchestration',
+        description: '부모 variants에서 자식 순차(stagger) 진입을 제어합니다.',
+        replay: '시퀀스 재생',
+        show: '시퀀스 표시',
+        items: {
+          button: '버튼',
+          card: '카드',
+          modal: '모달',
+        },
+      },
+      presence: {
+        title: 'AnimatePresence Modal',
+        description: 'mount/unmount 시 exit 애니메이션 동작을 검증합니다.',
+        open: 'Presence 모달 열기',
+        heading: 'AnimatePresence Exit',
+        body: '이 모달은 unmount 시 exit 애니메이션이 적용되는 동작을 보여줍니다.',
+        close: '닫기',
+      },
+    },
     playground: {
       badge: 'Unified Playground',
       title: '기초 + 제스처 + 레이아웃 통합 페이지',
@@ -91,6 +123,7 @@ export const messages = {
       nav: {
         dashboard: 'Plan Dashboard',
         playground: 'Motion Playground',
+        week1: 'Week1 Lab',
       },
       language: 'Language',
     },
@@ -141,6 +174,37 @@ export const messages = {
           focus: 'reduced motion, rendering cost, tokenization',
           milestone: 'Week 6',
         },
+      },
+    },
+    week1: {
+      badge: 'Week 1 Lab',
+      title: 'Basic Animation + AnimatePresence Practice',
+      description: 'Compare initial/animate/transition, variants, and exit transitions on one page.',
+      basic: {
+        title: 'Basic Transition',
+        description: 'Check spring/tween transition behavior in a single card.',
+        toggle: 'Toggle Card',
+        caption: 'initial/animate/transition sample',
+        body: 'Spring and tween differences can be compared through one interaction.',
+      },
+      variants: {
+        title: 'Variants Orchestration',
+        description: 'Control staggered child entrance from parent variants.',
+        replay: 'Replay Sequence',
+        show: 'Show Sequence',
+        items: {
+          button: 'Button',
+          card: 'Card',
+          modal: 'Modal',
+        },
+      },
+      presence: {
+        title: 'AnimatePresence Modal',
+        description: 'Verify exit animation behavior during mount/unmount.',
+        open: 'Open Presence Modal',
+        heading: 'AnimatePresence Exit',
+        body: 'This modal demonstrates how exit animation works on unmount.',
+        close: 'Close',
       },
     },
     playground: {
