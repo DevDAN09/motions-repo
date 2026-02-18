@@ -1,5 +1,5 @@
 import * as motion from "motion/react-client";
-import { LayoutAnimation } from "../../animations";
+import { LayoutAnimation, SharedLayoutAnimation } from "../../animations";
 import { useState } from "react";
 
 const LayoutPage:React.FC = () => {
@@ -25,6 +25,8 @@ const LayoutPage:React.FC = () => {
             
             <LayoutAnimation onToggle={(isOn) => setIsOn(isOn) } />
             <p>{isOn ? "flex-start" : "flex-end"}</p>
+
+            <SharedLayoutAnimation />
         </div>
         
         </>
