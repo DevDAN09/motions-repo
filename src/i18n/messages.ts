@@ -9,9 +9,7 @@ export const messages = {
       },
       nav: {
         dashboard: '계획 대시보드',
-        test1: '테스트1',
-        gesture: '제스처',
-        layout: '레이아웃',
+        playground: '모션 플레이그라운드',
       },
       language: '언어',
     },
@@ -64,6 +62,25 @@ export const messages = {
         },
       },
     },
+    playground: {
+      badge: 'Unified Playground',
+      title: '기초 + 제스처 + 레이아웃 통합 페이지',
+      description: '기존 test1, gesture, layout 데모를 하나의 관리 페이지로 통합했습니다.',
+      sections: {
+        basic: {
+          title: 'Basic Enter',
+          description: '초기 진입 애니메이션 샘플입니다.',
+        },
+        gesture: {
+          title: 'Gesture',
+          description: 'hover/tap, free drag, constrained drag를 한 화면에서 확인합니다.',
+        },
+        layout: {
+          title: 'Layout',
+          description: 'layout 토글과 shared layout 전환을 함께 테스트합니다.',
+        },
+      },
+    },
   },
   en: {
     app: {
@@ -73,9 +90,7 @@ export const messages = {
       },
       nav: {
         dashboard: 'Plan Dashboard',
-        test1: 'Test1',
-        gesture: 'Gesture',
-        layout: 'Layout',
+        playground: 'Motion Playground',
       },
       language: 'Language',
     },
@@ -125,6 +140,25 @@ export const messages = {
           title: 'Accessibility + Performance Finish',
           focus: 'reduced motion, rendering cost, tokenization',
           milestone: 'Week 6',
+        },
+      },
+    },
+    playground: {
+      badge: 'Unified Playground',
+      title: 'Combined Page for Basic + Gesture + Layout',
+      description: 'Merged existing test1, gesture, and layout demos into one manageable page.',
+      sections: {
+        basic: {
+          title: 'Basic Enter',
+          description: 'A simple enter animation sample.',
+        },
+        gesture: {
+          title: 'Gesture',
+          description: 'Check hover/tap, free drag, and constrained drag in one view.',
+        },
+        layout: {
+          title: 'Layout',
+          description: 'Test layout toggle and shared layout transition together.',
         },
       },
     },

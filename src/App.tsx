@@ -1,15 +1,11 @@
 import { Link, Route, Routes, useLocation } from 'react-router-dom'
-import Test1Page from './pages/Test1Page'
-import GesturePage from './pages/Gesture'
-import LayoutPage from './pages/Layout'
 import PlanDashboardPage from './pages/PlanDashboard'
+import MotionPlaygroundPage from './pages/MotionPlayground'
 import { useI18n } from './i18n/I18nContext'
 
 const navItems = [
   { to: '/', labelKey: 'app.nav.dashboard' },
-  { to: '/test1', labelKey: 'app.nav.test1' },
-  { to: '/gesture', labelKey: 'app.nav.gesture' },
-  { to: '/layout', labelKey: 'app.nav.layout' },
+  { to: '/playground', labelKey: 'app.nav.playground' },
 ]
 
 const Navigation = () => {
@@ -74,9 +70,7 @@ const App = () => {
       <main className="mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:px-8">
         <Routes>
           <Route path="/" element={<PlanDashboardPage />} />
-          <Route path="/test1" element={<Test1Page />} />
-          <Route path="/gesture" element={<GesturePage />} />
-          <Route path="/layout" element={<LayoutPage />} />
+          <Route path="/playground" element={<MotionPlaygroundPage />} />
         </Routes>
       </main>
     </div>
