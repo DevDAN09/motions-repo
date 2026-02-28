@@ -12,7 +12,7 @@ export default function ButtonTransitionDemo() {
   return (
     <div className="flex flex-col items-start gap-3">
       <p className="text-sm text-slate-700">
-        Direct props example: `initial/animate/transition` drive one element quickly.
+        Direct props 예시: `initial/animate/transition`으로 단일 요소를 빠르게 제어합니다.
       </p>
       <motion.button
         type="button"
@@ -29,7 +29,7 @@ export default function ButtonTransitionDemo() {
         onClick={() => setActive((prev) => !prev)}
         className="rounded-lg px-4 py-2 text-sm font-semibold text-white"
       >
-        {active ? "Active" : "Idle"} button
+        {active ? "활성" : "대기"} 버튼
       </motion.button>
     </div>
   );

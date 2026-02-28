@@ -17,7 +17,7 @@ export default function MotionBasicsPage() {
   return (
     <div className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-5 py-8">
       <header className="space-y-2">
-        <h1 className="text-2xl font-bold text-slate-900">Motion Basics + AnimatePresence</h1>
+        <h1 className="text-2xl font-bold text-slate-900">모션 기초 + AnimatePresence</h1>
         <p className="text-sm text-slate-700">
           `initial`, `animate`, `exit`, `transition` 패턴과 variants 오케스트레이션, 그리고
           mount/unmount 전환 데모를 한 페이지에서 확인합니다.
@@ -25,21 +25,21 @@ export default function MotionBasicsPage() {
       </header>
 
       <section className={sectionClassName}>
-        <h2 className="text-lg font-semibold text-slate-900">1) Button transition demo</h2>
+        <h2 className="text-lg font-semibold text-slate-900">1) 버튼 전환 데모</h2>
         <div className="mt-3">
           <ButtonTransitionDemo />
         </div>
       </section>
 
       <section className={sectionClassName}>
-        <h2 className="text-lg font-semibold text-slate-900">2) Card variants orchestration demo</h2>
+        <h2 className="text-lg font-semibold text-slate-900">2) 카드 variants 오케스트레이션 데모</h2>
         <div className="mt-3">
           <CardVariantsDemo />
         </div>
       </section>
 
       <section className={sectionClassName}>
-        <h2 className="text-lg font-semibold text-slate-900">3) Modal AnimatePresence demo</h2>
+        <h2 className="text-lg font-semibold text-slate-900">3) 모달 AnimatePresence 데모</h2>
         <div className="mt-3">
           <ModalPresenceDemo />
         </div>
@@ -47,13 +47,13 @@ export default function MotionBasicsPage() {
 
       <section className={sectionClassName}>
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <h2 className="text-lg font-semibold text-slate-900">Easing vs Spring</h2>
+          <h2 className="text-lg font-semibold text-slate-900">Easing과 Spring 비교</h2>
           <button
             type="button"
             onClick={() => setCompareToggle((prev) => !prev)}
             className="rounded-lg bg-slate-900 px-3 py-2 text-sm font-semibold text-white"
           >
-            Run comparison
+            비교 실행
           </button>
         </div>
 

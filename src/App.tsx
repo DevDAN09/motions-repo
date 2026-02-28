@@ -5,8 +5,8 @@ import LayoutPage from "./pages/Layout";
 import MotionBasicsPage from "./pages/MotionBasics";
 import Test1Page from "./pages/Test1Page";
 
-const Home: React.FC = () => <h1>Home page</h1>;
-const About: React.FC = () => <h1>About page</h1>;
+const Home: React.FC = () => <h1>홈 페이지</h1>;
+const About: React.FC = () => <h1>소개 페이지</h1>;
 
 const App: React.FC = () => {
   return (
@@ -29,7 +29,7 @@ const App: React.FC = () => {
             <Link to="/layout">layout</Link>
           </li>
           <li>
-            <Link to="/motion-basics">motion-basics</Link>
+            <Link to="/motion-basics">모션 기초</Link>
           </li>
         </ul>
       </nav>

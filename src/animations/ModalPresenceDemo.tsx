@@ -7,13 +7,13 @@ export default function ModalPresenceDemo() {
 
   return (
     <div className="flex flex-col items-start gap-3">
-      <p className="text-sm text-slate-700">AnimatePresence keeps exit animations for unmounting UI.</p>
+      <p className="text-sm text-slate-700">AnimatePresence는 UI 언마운트 시 exit 애니메이션을 유지합니다.</p>
       <button
         type="button"
         className="rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-900"
         onClick={() => setOpen(true)}
       >
-        Open modal
+        모달 열기
       </button>
 
       <AnimatePresence>
@@ -35,16 +35,16 @@ export default function ModalPresenceDemo() {
               className="w-full max-w-sm rounded-xl bg-white p-5 shadow-lg"
               onClick={(event) => event.stopPropagation()}
             >
-              <h3 className="text-base font-bold text-slate-900">Presence Modal</h3>
+              <h3 className="text-base font-bold text-slate-900">Presence 모달</h3>
               <p className="mt-1 text-sm text-slate-700">
-                This box runs enter and exit transitions during mount/unmount.
+                이 박스는 mount/unmount 시 enter/exit 전환을 실행합니다.
               </p>
               <button
                 type="button"
                 className="mt-4 rounded-md bg-slate-900 px-3 py-2 text-sm font-semibold text-white"
                 onClick={() => setOpen(false)}
               >
-                Close
+                닫기
               </button>
             </motion.div>
           </motion.div>
