@@ -4,6 +4,7 @@ import EnterAnimation from "./EnterAnimation";
 import LayoutAnimation from "./LayoutAnimation";
 import ModalPresenceDemo from "./ModalPresenceDemo";
 import SharedLayoutAnimation from "./SharedLayoutAnimation";
+import ReorderListDemo from "./ReorderListDemo";
 import constant from "./constant";
 
 export {
@@ -13,5 +14,6 @@ export {
   LayoutAnimation,
   ModalPresenceDemo,
   SharedLayoutAnimation,
+  ReorderListDemo,
   constant,
 };

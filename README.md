@@ -34,3 +34,32 @@
 - 버튼 데모(`ButtonTransitionDemo`): direct props 기반 상태 전환 + 상호작용
 - 카드 데모(`CardVariantsDemo`): 부모-자식 variants 오케스트레이션
 - 모달 데모(`ModalPresenceDemo`): `AnimatePresence` 기반 mount/unmount enter/exit 전환
+
+---
+
+# Layout & Shared Layout (Iteration 2)
+
+## 추가한 내용
+- `layout` 토글 예제를 통해 레이아웃 변경 시 부드러운 보간 동작 확인
+- `layoutId` 기반 탭 underline shared transition 유지
+- `LayoutGroup`을 적용해 shared layout 컨텍스트를 명시적으로 그룹화
+- `Reorder.Group` / `Reorder.Item` 기반 sortable 리스트 데모 추가
+
+## 확인 위치
+- 라우트: `/layout`
+- 페이지 파일: `src/pages/Layout/LayoutPage.tsx`
+- 데모 파일:
+  - `src/animations/LayoutAnimation.tsx`
+  - `src/animations/SharedLayoutAnimation.tsx`
+  - `src/animations/ReorderListDemo.tsx`
+
+## Layout API 사용 가이드 (요약)
+- `layout`: 같은 컴포넌트가 위치/크기만 바뀌는 경우 가장 간단한 선택
+- `layoutId`: 서로 다른 컴포넌트 사이를 “같은 요소”처럼 이어서 전환하고 싶을 때 사용
+- `LayoutGroup`: shared layout(`layoutId`)를 묶어 충돌 없이 전환 맥락을 분리할 때 사용
+- `Reorder`: 단순 정렬 변경 UI를 빠르게 만들 때 유리(리스트 상태를 `values`로 관리)
+
+## 주의사항
+- `layoutId` 문자열은 같은 그룹 내에서 유일해야 전환이 안정적입니다.
+- `Reorder`는 key/value 안정성이 중요하므로 불변 데이터(고유 값)를 권장합니다.
+- 과도한 박스 그림자/필터는 체감 성능 저하를 만들 수 있어, 리스트 아이템 스타일은 가볍게 유지하는 것이 좋습니다.
