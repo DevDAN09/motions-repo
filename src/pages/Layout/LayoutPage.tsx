@@ -1,5 +1,5 @@
 import * as motion from "motion/react-client";
-import { LayoutAnimation, SharedLayoutAnimation } from "../../animations";
+import { LayoutAnimation, ReorderListDemo, SharedLayoutAnimation } from "../../animations";
 import { useState } from "react";
 
 const LayoutPage:React.FC = () => {
@@ -27,6 +27,7 @@ const LayoutPage:React.FC = () => {
             <p>{isOn ? "flex-start" : "flex-end"}</p>
 
             <SharedLayoutAnimation />
+            <ReorderListDemo />
         </div>
         
         </>
